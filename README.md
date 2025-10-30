@@ -4,6 +4,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+You have to install the required dependencies, you can run:
+
+### `npm install`
+### `npm install @aws-cdk/client-sns`
+
+You have to add your secret environment variables before you begin the development site:
+### `const REGION = "<YOUR_REGION>"; // e.g. "ap-south-1"`
+### `const TOPIC_ARN = "<YOUR_TOPIC_ARN>";`
+### `const ACCESS_KEY_ID = "<YOUR_ACCESS_KEY_ID>";`
+### `const SECRET_ACCESS_KEY = "<YOUR_SECRET_ACCESS_KEY>";`
+
+You can continue from here👇
+
 In the project directory, you can run:
 
 ### `npm start`
