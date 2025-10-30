@@ -1,0 +1,283 @@
+/* Analytics Styles */
+.analytics-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.analytics-container h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.analytics-container h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Summary Cards */
+.analytics-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #667eea;
+}
+
+.summary-label {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.summary-meta {
+  color: #95a5a6;
+  font-size: 0.85rem;
+}
+
+/* Analytics Section */
+.analytics-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+/* Categories List */
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.category-amount {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.category-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.category-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.category-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+/* Monthly Chart */
+.monthly-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 15px;
+  min-height: 250px;
+  padding: 20px 0;
+  border-top: 1px solid #ecf0f1;
+}
+
+.month-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.month-bar {
+  width: 100%;
+  max-width: 60px;
+  height: 200px;
+  background-color: #ecf0f1;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.month-bar-fill {
+  width: 100%;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s ease;
+}
+
+.month-label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 60px;
+  word-wrap: break-word;
+}
+
+.month-amount {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+/* Insights */
+.insights {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.insight-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.insight-icon {
+  font-size: 1.5rem;
+}
+
+.insight-text {
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.insight-text strong {
+  color: #667eea;
+}
+
+.no-data {
+  text-align: center;
+  color: #95a5a6;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .analytics-container {
+    padding: 20px;
+    margin: 20px 15px;
+  }
+
+  .analytics-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-value {
+    font-size: 1.5rem;
+  }
+
+  .monthly-chart {
+    gap: 10px;
+    min-height: 200px;
+  }
+
+  .month-bar {
+    max-width: 50px;
+    height: 150px;
+  }
+
+  .category-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .analytics-container {
+    padding: 15px;
+    margin: 15px 10px;
+  }
+
+  .analytics-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .analytics-container h3 {
+    font-size: 1rem;
+  }
+
+  .summary-card {
+    padding: 15px;
+  }
+
+  .summary-value {
+    font-size: 1.3rem;
+  }
+
+  .monthly-chart {
+    min-height: 150px;
+  }
+
+  .month-bar {
+    max-width: 40px;
+    height: 120px;
+  }
+
+  .month-label {
+    font-size: 0.8rem;
+  }
+}
